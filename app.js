@@ -27,7 +27,7 @@ app.get('/lovelace' , function(request ,response){
     response.sendFile(path.join(__dirname,"/views/lovelace.html" ))
 })
 app.get('/turing' , function(request ,response){
-    response.sendFile(path.join(__dirname,"/views/turing.html" ))
+    response.sendFile(path.join(__dirname,"/tp Heroes/views/turing.html" ))
 })
 
 
