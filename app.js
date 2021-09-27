@@ -1,8 +1,8 @@
-let express = require('express') // estoy requiriendo express
-let app = express()// invocar
+let express = require('express')
+let app = express()
 const PORT = 3030
 let path = require('path')
-app.use(express.static('./public/imagen'));
+app.use(express.static("public"));
 
 
 
@@ -32,6 +32,4 @@ app.get('/turing' , function(request ,response){
 })
 
 
-app.listen(PORT, ()=> console.log(`servidor levantado en el puerto${PORT}
-
-http://localhost:${PORT}`))
+app.listen(PORT, ()=> console.log(`servidor levantado en el puerto${PORT}http://localhost:${PORT}`))
