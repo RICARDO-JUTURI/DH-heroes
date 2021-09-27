@@ -1,6 +1,7 @@
 let express = require('express') // estoy requiriendo express
 let app = express()// invocar
 const PORT = 3030
+let path = require('path')
 app.use(express.static('./public/imagen'));
 
 
@@ -27,7 +28,7 @@ app.get('/lovelace' , function(request ,response){
     response.sendFile(path.join(__dirname,"/views/lovelace.html" ))
 })
 app.get('/turing' , function(request ,response){
-    response.sendFile(path.join(__dirname,"/tp Heroes/views/turing.html" ))
+    response.sendFile(path.join(__dirname,"/views/turing.html" ))
 })
 
 
